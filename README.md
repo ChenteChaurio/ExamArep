@@ -21,3 +21,6 @@
 
 ## Funcionamiento del index
 ![alt text](assets/FuncionamientoIndex.png)
+
+## Video Funcionamiento
+https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/vicente_garzon-r_mail_escuelaing_edu_co/IQDdKyIFriq1QJRiEA_N2fJhAdOWVdgpYEqtsXcACZub-mI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fnErdi
