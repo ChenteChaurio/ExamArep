@@ -6,25 +6,27 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class ControllerProxy {
     String service1 = "http://ec2-54-197-196-91.compute-1.amazonaws.com:8080";  
-    String service2 = "http://localhost:8080";
+    String service2 = "http://ec2-44-202-9-128.compute-1.amazonaws.com:8080";
 
+    @CrossOrigin(origins = "*")
     @GetMapping("/lucasseq")
     public String Sequencuelucas(@RequestParam int value){
         String url1 = service1 + "/sequencuelucas?value=" + value;
-        System.out.println(url1);
-        String url2 = service1 + "/sequencuelucas?value=" + value;
+        String url2 = service2 + "/sequencuelucas?value=" + value;
+        
 
         try{
-            System.out.println("Server1");
             return callURL(url1);
         }catch(Exception e){
             try {
-                System.out.println("Server2");
                 return callURL(url2);
             } catch (Exception eX) {
                 return "Error todo rarito";
